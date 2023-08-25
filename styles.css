@@ -248,6 +248,7 @@ button:active{
 footer{
     color: grey;
     justify-content: center;
+    
     display: flex;
     font-size: larger;
     text-decoration: none;
