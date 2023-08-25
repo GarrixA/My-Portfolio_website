@@ -254,6 +254,11 @@ footer{
     text-decoration: none;
 }
 
+hr
+{
+    margin-top: 100px;
+}
+
 footer> ul{
     display: flex;
     padding: 5px;
