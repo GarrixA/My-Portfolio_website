@@ -8,44 +8,34 @@
     <script src="https://kit.fontawesome.com/aabe8d8669.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="respons.css">
+    <script src="style.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <div class="nav-bar">
-            <div class="left-side">
-                <div class="logo1">
-                    <div class="image">
-                       <a href="index.htm"><img src="images/prof.png" alt="image"></a>   
-                    </div>
-                    <div class="name">
-                        <a href="index.htm" style="text-decoration: none; color: #fff;"><h2>Aphrodis UWINEZA</h2></a>
-                    </div>
-                </div>
-                </div>
-                <div class="right-side">
-                    <div class="nav-bar-link">
-                        <a href="#">About me</a>
-                    </div>
-                    <div class="nav-bar-link">
-                        <a href="#">Resume</a>
-                    </div>
-                    <div class="nav-bar-link">
-                        <a href="portfolio.htm">Portfolio</a>
-                    </div>
-                    <div class="nav-bar-link">
-                        <a href="#">Blog</a>
-                    </div>
-                    <div class="nav-bar-link">
-                        <a href="#">Contact</a>
-                    </div>  
-                </div>
-        </div>  
-    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/prof.png" alt="image">
+            <h2>Aphrodis UWINEZA</h2>
+        </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.htm">Portfolio</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
 
 <!-- the main body starts here -->
-
-    <div class="cont">
         <div class="main">
             <div class="control">
                 <div class="profile">
@@ -71,11 +61,6 @@
                     </div>
                 </div>
             </div>
-            <!--
-            <div>
-                <a href="#">Download my cv</a>
-            </div>
-            -->
         </div>
 
         <div class="about">
@@ -119,14 +104,13 @@
                 </div>
             </div>
         </div>
-    </div>
     <hr>
     <div class="footer" id="footer">
         <footer>
             <ul>
-                <li>Twitter</li>
-                <li>Instagram</li>
-                <li>Facebook</li>
+                <li><a href="https://twitter.com/AphrodisGarrix">Twitter</a></li>
+                <li><a href="https://www.instagram.com/aphrodisgarrix/">Instagram</a></li>
+                <li><a href="https://web.facebook.com/aphrodisGarrix.Garritzen/">Facebook</a></li>
             </ul>
         </footer>
     </div>

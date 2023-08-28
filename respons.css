@@ -1,0 +1,27 @@
+/* @media screen and (max-width: 768px) 
+{
+    .nav-bar
+    {
+        display: block;
+        
+    }
+    .right-side
+    {
+        padding-right: 0px;
+        display: flex;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .log1
+    {
+        justify-content: center;
+
+    }
+
+    .log-1
+    {
+
+    }
+
+} */
