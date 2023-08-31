@@ -61,7 +61,7 @@ body{
     box-shadow: 0 0 20px slid black;
 }
 
-.nav-links > ul
+.nav_links > ul
 {
     margin: 0;
     padding: 0;
@@ -72,14 +72,14 @@ body{
     
 }
 
-.nav-links li
+.nav_links li
 {
     list-style-type: none;
     font-size: 30px;
 
 }
 
-.nav-links li a
+.nav_links li a
 {
     text-decoration: none;
     color: #ffff;
@@ -88,14 +88,14 @@ body{
     
 }
 
-.nav-links li a:hover
+.nav_links li a:hover
 {
     background-color: #0870f8f1;
 }
 
 /***** taggle-button*****/
 
-.toggle-button
+.toggle
 {
     position: absolute;
     top: .75rem;
@@ -107,129 +107,16 @@ body{
     height: 21px;
 }
  
-.toggle-button .bar
+.toggle .bar
 {
-    height: 3px;
-    width: 100%;
+    height: 4px;
+    width: 30px;
     background-color: #ffff;
-    border-radius: 10px;
-}
-
-/* @media screen and (width: 768px)
-{
-    .toggle-button
-    {
-        display: flex;
-    }
+    border-radius: 50px;
     
-    .nav-links
-    {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar
-    {
-        display: inline-flex;
-
-    }
-
-    .nav-links ul
-    {
-        flex-direction: column;
-        width: 100%;
-        
-    }
-
-    .nav-links li
-    {
-        text-align: center;
-    }
-
-    .nav-links li a
-    {
-        padding: .5rem 1rem;
-    }
-
-    .nav-links.active
-    {
-        display: flex;
-    }
-} */
-
-/* @media screen and (width: 425px)
-{
-    .toggle-button
-    {
-        display: flex;
-    }
-    
-    .nav-links
-    {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar
-    {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links ul
-    {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-links li
-    {
-        text-align: center;
-    }
-
-    .nav-links li a
-    {
-        padding: .5rem 1rem;
-    }
-
-    .nav-links.active
-    {
-        display: flex;
-    }
-} */
-
-/* 
-.nav-bar > .right-side > div{
-    margin-left: 40px;
-    font-size: 1.4em;
-    text-transform: none;
 }
 
 
-.nav-bar-link{
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
-}
-
-.nav-bar-link a{
-    text-decoration: none;
-    color: #6F8FAF;
-    transition: color 0.5s;
-}
-
-.nav-bar-link:hover{
-    border-bottom: 3px solid #CD5C5C;
-}
-
-.nav-bar-link a:hover{
-    color: #CD5C5C;
-}
-
-.right-left div{
-    margin-right: 20px;
-    padding-left: 50px;
-}
 
 .nav-bar > .left-side > div{
 margin-right: 10px;

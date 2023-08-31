@@ -1,27 +1,170 @@
-/* @media screen and (max-width: 768px) 
+@media only screen and (max-width: 320px){
+    .navbar{
+       display: block;
+    }
+
+    .logo{
+        padding-left: 10px;
+        min-width: 200px;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+
+    }
+
+    .logo img{
+        min-width: 50px;
+    }
+
+    .logo h2{
+        font-size: 30px;
+    }
+
+    .nav_links ul{
+        display: block;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 10px;
+    }
+
+    .nav_links ul li{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 320px)
 {
-    .nav-bar
+    .toggle
+    {
+        display: flex;
+    }
+
+
+    .active #line1::before
+    {
+    transform: rotate(45deg);
+    transition: -4s;
+    content: "";
+    position: absolute;
+    transform: translate(-10px);
+
+    }
+
+    .active #line1::after
+    {
+    transform: rotate(-60deg);
+    
+    }
+
+
+    .active #line2
+    {
+        opacity: 0;
+    }
+
+    .active #line3
+    {
+        transform: rotate(-45deg);
+        transition: -4s;
+        content: "";
+        position: absolute;
+        transform: translate(50px);
+    }
+    
+    .nav_links
+    {
+        
+        width: 100%;
+        display: inline-block;
+        left: 400px;
+    }
+
+    
+    
+
+    .navbar
     {
         display: block;
+        flex-direction: column;
         
     }
-    .right-side
+
+    .nav_links ul
     {
-        padding-right: 0px;
-        display: flex;
+        display: block;
         width: 100%;
-        margin: 0px;
+        flex-grow: 1;
     }
 
-    .log1
+    .nav_links li
     {
-        justify-content: center;
-
+        text-align: center;
+        flex-grow: 1;
     }
 
-    .log-1
+    .nav_links li a
     {
-
+        padding: .5rem 1rem;
     }
 
-} */
+    .nav_links.active
+    {
+        display: flex;
+    }
+
+   
+} 
+
+@media only screen and (max-width: 320px){
+    .control{
+        display: block;
+        max-width: 300px;
+    }
+    
+    .discription-main{
+        margin-left: 12px;
+        max-width: 300px;
+    }
+
+    .profile{
+        max-width: 200px;
+        max-height: 200px;
+        margin-left: 50px;
+        
+    }
+
+    .izina{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .main{
+        max-width: 300px;
+          
+    }
+
+    .about{
+        max-width: 300px;
+    
+    }
+
+    .designer{
+        max-width: 300px;
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .footer{
+        max-width: 300px;
+    }
+
+    .footer ul{
+        gap: 5px;
+    }
+
+    .footer ul li{
+        padding: 5px;
+    }
+}
+

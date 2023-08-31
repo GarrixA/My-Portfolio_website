@@ -13,17 +13,17 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="logo">
             <img src="images/prof.png" alt="image">
             <h2>Aphrodis UWINEZA</h2>
         </div>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <a href="#" class="toggle" id="toggle">
+            <span class="bar" id="line1"></span>
+            <span class="bar" id="line2"></span>
+            <span class="bar" id="line3"></span>
         </a>
-        <div class="nav-links">
+        <div class="nav_links" id="nav_links">
             <ul>
                 <li><a href="index.htm">Home</a></li>
                 <li><a href="#">About me</a></li>
@@ -115,4 +115,17 @@
         </footer>
     </div>
 </body>
+
+    <script>
+        const tag = document.getElementById('navbar');
+        const menu = document.getElementById('nav_links');
+
+        
+        tag.onclick = function(){
+            tag.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+        
+    </script>
+
 </html>
