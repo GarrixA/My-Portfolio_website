@@ -175,7 +175,7 @@ body{
 }
 
 
-.img_two > img
+.img_two > a > img
 {
     margin: 30px;
     height: 400px;

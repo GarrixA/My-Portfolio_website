@@ -36,6 +36,8 @@ body{
     align-items: center;
     /* background-color: #646161; */
     color: #ffff;
+   
+    top: 0px;
 }
 
 .navbar > .logo
@@ -343,9 +345,7 @@ footer> ul> li a:hover
     height: 20px;
 }
 
-.my_icon{
-    
-}
+
 
 .my_icon > .icon > .icon1{
     color: #0075FF;
