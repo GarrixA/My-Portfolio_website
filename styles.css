@@ -37,7 +37,10 @@ body{
     /* background-color: #646161; */
     color: #ffff;
    
-    top: 0px;
+   top: 0;
+   background: #1C1C1C;
+  
+    
 }
 
 .navbar > .logo
@@ -45,6 +48,8 @@ body{
     display: flex;
     margin: 15px;
     align-items: center;
+  
+    
     
 }
 
@@ -61,6 +66,7 @@ body{
     border-radius: 50%;
     border: 3px solid #646161;
     box-shadow: 0 0 20px slid black;
+    
 }
 
 .nav_links > ul
@@ -92,7 +98,9 @@ body{
 
 .nav_links li a:hover
 {
-    background-color: #0870f8f1;
+    background-color: #21497e7c;
+    border-radius: 6px;
+
 }
 
 /***** taggle-button*****/

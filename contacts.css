@@ -1,3 +1,8 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -18,6 +23,7 @@ body{
     align-items: center;
     /* background-color: #646161; */
     color: #ffff;
+    position: sticky;
 }
 
 .navbar > .logo
@@ -171,7 +177,7 @@ body{
 
 .left-class
 {
-    padding-top: 50px;
+    padding-top: 90px;
 }
 
 span
@@ -194,6 +200,11 @@ span
     margin: 0;
     padding: 0;
     gap: 5px;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 40px;
 }
 
 .location
@@ -220,4 +231,78 @@ span
     color: rgba(18, 84, 207, 0.589);
     font-size: 30px;
     margin-top: 20px;
+}
+
+
+/* form */
+
+
+.container{
+    width: 40%;
+    height: 40vh;
+    background-color: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+form{
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction:row;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+
+form h3{
+    color: #ffffff;
+    font-weight: 800;
+    margin-top: 0;
+    font-size: 40px;
+}
+
+form input, form textarea{
+
+    margin: 10px 0px;
+    padding: 20px;
+    outline: none;
+    background: #ffffff;
+    font-size: 16px;
+    border-radius: 12px;
+    font-family: 'Slabo 27px', serif;
+}
+
+
+
+#name, #email, #phone{
+    height: 2px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.fl{
+    margin-top: 43px;
+}
+
+.fl button{
+    margin-left: 25px;
+    margin-top: 2px;
+}
+
+
+
+form button{
+    padding: 15px;
+    background: #2b2727;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #1c1c1c;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
 }

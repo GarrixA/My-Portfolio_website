@@ -61,12 +61,15 @@
     
     <div class="contact-add">
         <div class="left-class">
+            <h1>Address</h1>
             <div class="phone-cont">
                 <div class="phone">
                     <iconify-icon icon="wpf:iphone"></iconify-icon>
                 </div>
-                    <div class="phn"> <h2>+250789438437</h2></div>
+                <div class="phn"> 
+                    <h2>+250789438437</h2>
                 </div>
+            </div>
             <div class="location">
                 <div class="loc-icon">
                     <iconify-icon icon="fluent:location-28-filled"></iconify-icon>
@@ -85,20 +88,18 @@
             </div>
         </div>
         <div class="container">
-            <div class="middle-class">
-                <h2>Leave a message</h2>
-                <input type="text" class="field" placeholder="your first name">
-                <input type="text" class="field" placeholder="your last name" required>
-                <input type="text" class="field" placeholder="your email" required>
-            </div>
-            <div class="right-class">
-                <div class="message">
-                    <textarea class="fiel" placeholder="message"></textarea>
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <div class="no-fl">
+                    <h3>Get in touch</h3>
+                    <input type="text" id="name" placeholder="your name" required>
+                    <input type="email" id="email" placeholder="your email" required>
+                    <input type="text" id="phone" placeholder="phone number" required>
                 </div>
-                <div class="btn">
-                    <button type="button1">Send message</button>
+                <div class="fl">
+                    <textarea id="message" rows="4" placeholder="how can I help you?"></textarea>
+                    <button type="submit" id="btn">Submit</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
     <hr>

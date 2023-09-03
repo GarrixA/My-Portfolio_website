@@ -18,6 +18,7 @@ body{
     align-items: center;
     /* background-color: #646161; */
     color: #ffff;
+    position: sticky;
 }
 
 .navbar > .logo
@@ -72,7 +73,7 @@ body{
 
 .nav_links li a:hover
 {
-    background-color: #0870f8f1;
+    background-color: #21497e7c;
 }
 
 /**
