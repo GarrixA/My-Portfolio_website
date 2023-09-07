@@ -7,7 +7,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        background-color: rgba(58, 55, 52, 0.637);
+        background-color: #1C1C1C
     }
 
     body{
@@ -49,26 +49,7 @@
         display: none;
     }
 
-    ul{
-        flex-direction: column;
-        flex-grow: 1;
-        justify-content: space-around;
-        width: 100%;
-        padding-right: 0px;
-    }
-     ul li{
-        text-align: center;
-        width: 90%;
-        margin-left: 10%;
-        
-        
-    }
-
-     ul li:hover
-     {
-        background-color: aquamarine;
-        color: aquamarine;
-     }
+    /* main body */
 
      .control
      {
@@ -111,21 +92,242 @@
      {
         margin-left: 20px;
      }
+   
+     /* Portfolio page */
 
-     footer
-     {
-        display: inline-flex;
-        width: 90%;
-        flex-direction: row;
-     }
+   .designs > .top{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+   }
 
-     footer ul
-     {
-        flex-direction: row;
-        justify-content: center;
-        gap: 0px;
-        margin-left: 0px;
-        padding: 0px;
-        flex-grow: 1;
-     }
+   .designs > .bottom{
+      display: flex;
+      flex-direction: column;
+      width: 370px;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .img_two {
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-grow: 1;
+   }
+
+
+   #todo{
+      display: flex;
+      max-height: 300px;
+      max-width: 300px;
+      border: 2px solid purple;
+   }
+
+   .img_two > img{
+      display: flex;
+      height: 300px;
+      width: 300px;
+      border: 2px solid purple;
+      border-radius: 8px;
+      margin-top: 18px;
+
+   }
+
+   .img_one{
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 200px;
+      flex-grow: 1;
+   }
+
+   #timer{
+      height: 30vh;
+      width: 300px;
+      border: 2px solid purple;
+      border-radius: 12px;
+      margin-top: 19px;
+      margin-bottom: 19px;
+   }
+
+   .img_one > img{
+      height: 30vh;
+      width: 300px;
+      border: 2px solid purple;
+      border-radius: 12px;
+      margin-top: 19px;
+   }
+
+
+   /* Footer */
+   .footer{
+      min-width: 300px;
+      align-items: center;
+      justify-content: center;
+      margin: 0px;
+   }
+
+
+   footer > ul{
+      gap: 0px;
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      
+
+   }
+
+
+   ul > li{
+      
+    padding: 0px;
+   
+      
+   }
+
+   /* ul > li > a{
+      width: 290px;
+      margin: 0px;
+   } */
+
+
+   ul li:hover
+   {
+      background-color: aquamarine;
+      color: aquamarine;
+   }
+
+   hr{
+      padding: 0;
+      margin-top: 70px;
+      min-width: 300px;
+   }
+   
+
+   /* Contacts Respo... */
+
+   
+
+   iframe{
+      width: 400px;
+      height: 60px;
+   }
+
+   
+
+   .left-class{
+      padding-top: 10px;
+
+     
+   }
+
+
+
+
+   .fl{
+
+      margin-top: 10px;
+      width: 300px;
+   }
+
+   .no-fl{
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+   }
+
+
+   .contact-add{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   
+
+   #form{
+      margin-top: 110px;
+      width: 100%;
+      
+   }
+
+
+   /* Resume part */
+
+         /* Education */
+
+   .diff{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .sides{
+      width: 100%;
+   }
+
+   .sides > .left-side{
+      width: 100%;
+   }
+
+   .sides > .left-side > .type{
+      margin-left: 8px;
+   }
+
+   .sides > .left-side > .btn{
+      margin-left: 5%;
+   }
+
+   .sides > .left-side > .faculty{
+      margin-left: 10%;
+   }
+
+   .sides > .left-side > .div-text > p{
+      margin-left: 13%;
+   }
+
+   .sides > .left-side > .div-text {
+      width: 350px;
+   }
+
+         /* Experience */
+
+   .diff > .right-side > .type{
+      margin-left: 10px;
+   }
+
+   .diff > .right-side > .btn{
+      margin-left: 8%;
+   }
+
+   .diff > .right-side > .faculty{
+      margin-left: 12%;
+   }
+
+   .diff > .right-side > .bbb{
+      margin-left: 15%;
+   }
+
+   .diff > .right-side {
+      width: 350px;
+      margin-top: 30px;
+   }
 }
+
+
