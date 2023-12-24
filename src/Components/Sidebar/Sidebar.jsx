@@ -1,7 +1,7 @@
 import { useState } from "react"
 import ToggleButton from "./toggleButton/ToggleButton"
 import { motion } from "framer-motion"
-import Links from "./Links/Links";
+import MyLinks from "./Links/Links";
 
 
 const Sidebar = () => {
@@ -31,7 +31,7 @@ const Sidebar = () => {
   return (
     <motion.div className="sidebar flex flex-col items-center justify-center bg-white text-black" animate={open ? "open" : "closed"}>
         <motion.div className="bg fixed top-0 left-0 bottom-0 w-[18rem] bg-white" variants={variants}>
-           <Links/>
+           <MyLinks/>
         </motion.div>
         <ToggleButton toggleOpen={toggleOpen}/>
     </motion.div>
