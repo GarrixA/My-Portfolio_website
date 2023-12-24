@@ -1,17 +1,8 @@
-# My portfolio
+# React + Vite
 
-## my name is Aphrodis UWINEZA, I managed to build up this portfolio website using HTML and CSS 
-            This is my work
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-            It countains Home page, and other pages more that 2 and contains my work too.
-            make sure you navigate through.
+Currently, two official plugins are available:
 
-            You have 100% wright to reuse my codes
-            After finding it usefull send a DM
-
-                    My social links:
-                            twitter https://twitter.com/AphrodisGarrix
-                            Instagram https://www.instagram.com/aphrodisgarrix/
-                             Whatsapp and call +250789438437
-
-                Don't hesitate to reach out to me
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
