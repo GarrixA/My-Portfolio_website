@@ -19,6 +19,21 @@ const variants = {
     }
 }
 
+const cardVariant = {
+    initial: {
+        x: -500,
+        y: -10,
+        opacity: 0
+    },
+    animate: {
+        x: 0,
+        y: 0,
+        opacity: 3,
+        transition : {
+            duration: 3,
+        }
+    }
+}
 
 
 const Services = () => {
@@ -62,14 +77,17 @@ const Services = () => {
           </button>
         </div>
       </motion.div>
-      <motion.div className="listContainer flex-[2] flex max-w-[85.375rem] m-auto" variants={variants} initial="initial" whileInView="animate">
-        <motion.div
+      <motion.div className="listContainer flex-[2] flex max-w-[85.375rem] m-auto" variants={cardVariant} initial="initial" whileInView="animate">
+        <motion.div 
           className="box p-10 border border-s-gray-500 flex flex-col justify-between"
           whileHover={{
             background: "lightgray",
             color: "black",
-          }}
-        >
+            scale: 1.2,
+            transition: {
+                duration: 2
+            }
+          }}>
           <h2 className="p-1 mb-5 text-xl font-bold">Branding</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi optio
@@ -86,8 +104,12 @@ const Services = () => {
           whileHover={{
             background: "lightgray",
             color: "black",
+            scale: 1.2,
+            transition: {
+                duration: 2
+            }
           }}
-        >
+          variants={cardVariant} initial="initial" whileInView="animate">
           <h2 className="p-1 mb-5 text-xl font-bold">Branding</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi optio
@@ -104,8 +126,11 @@ const Services = () => {
           whileHover={{
             background: "lightgray",
             color: "black",
-          }}
-        >
+            scale: 1.2,
+            transition: {
+                duration: 2
+            }
+          }}>
           <h2 className="p-1 mb-5 text-xl font-bold">Branding</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi optio
@@ -119,11 +144,15 @@ const Services = () => {
         </motion.div>
         <motion.div
           className="box p-10 border border-s-gray-500 flex flex-col justify-between"
+          variants={cardVariant} initial="initial" whileInView="animate"
           whileHover={{
             background: "lightgray",
             color: "black",
-          }}
-        >
+            scale: 1.2,
+            transition: {
+                duration: 2
+            }
+          }}>
           <h2 className="p-1 mb-5 text-xl font-bold">Branding</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi optio
@@ -135,6 +164,7 @@ const Services = () => {
             Go
           </button>
         </motion.div>
+        
         
       </motion.div>
     </motion.div>
