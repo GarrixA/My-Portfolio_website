@@ -1,4 +1,4 @@
-import  "../../index.css";
+import  "../../index.scss";
 import img1 from "../../images/profile.png";
 import scroll from "../../../public/scroll.png";
 import { motion } from "framer-motion";

@@ -2,7 +2,7 @@ import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
 import Parallax from './Components/Parallax/Parallax';
 import Services from './Components/Services/Services';
-import './index.css';
+import './index.scss';
 const App = ()=> {
 
   return (
