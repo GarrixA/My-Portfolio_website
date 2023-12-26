@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="navbar h-28">
       {/* Navbar */}
       <Sidebar/>
-      <div className="wrapper w-[85.375rem] flex items-center justify-between m-auto h-full">
+      <div className="wrapper max-w-[85.375rem] flex items-center justify-between m-auto h-full">
         <motion.span
           animate={{
             opacity: [1, 0, 1],

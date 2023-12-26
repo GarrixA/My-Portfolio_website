@@ -1,3 +1,4 @@
+import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
 import './index.css';
 const App = ()=> {
@@ -6,11 +7,12 @@ const App = ()=> {
     <>
       <section id='Home'>
         <Navbar/>
+        <Home/>
       </section>
       <section>Parallax</section>
       <section id='Services'>Services</section>
       <section>Parallax</section>
-      <section id='#Portfolio'>Portifolio 1</section>
+      <section id='Portfolio'>Portifolio 1</section>
       <section>Portifolio 2</section>
       <section>Portifolio 3</section>
       <section id='Contact'>Contacts</section>
