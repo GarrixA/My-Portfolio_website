@@ -1,5 +1,6 @@
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
+import Parallax from './Components/Parallax/Parallax';
 import './index.css';
 const App = ()=> {
 
@@ -9,10 +10,10 @@ const App = ()=> {
         <Navbar/>
         <Home/>
       </section>
-      <section>Parallax</section>
-      <section id='Services'>Services</section>
-      <section>Parallax</section>
-      <section id='Portfolio'>Portifolio 1</section>
+      <section id="Services"><Parallax type="Services"/></section>
+      <section>Services</section>
+      <section id="Portfolio"><Parallax type="Portfolio"/></section>
+      <section>Portifolio 1</section>
       <section>Portifolio 2</section>
       <section>Portifolio 3</section>
       <section id='Contact'>Contacts</section>
