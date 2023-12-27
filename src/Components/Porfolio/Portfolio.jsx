@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import image from "../../images/Des 3.png";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
