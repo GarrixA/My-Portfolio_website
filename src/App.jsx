@@ -1,3 +1,4 @@
+import Contacts from './Components/Contacts/Contacts';
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
 import Parallax from './Components/Parallax/Parallax';
@@ -17,7 +18,7 @@ const App = ()=> {
       <section id="Portfolio"><Parallax type="Portfolio"/></section>
       <Portfolio/>
       
-      <section id='Contact'>Contacts</section>
+      <section id='Contact'><Contacts/></section>
     </>
   )
 }
