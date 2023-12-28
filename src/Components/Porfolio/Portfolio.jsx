@@ -51,7 +51,7 @@ const Single = ({ item }) => {
 
   return (
     <section>
-      <div className="container flex items-center justify-center w-full h-full">
+      <div className="container flex items-center justify-center w-full h-full -z-10">
         <div className="wrapper flex items-center justify-center w-full h-full max-w-[85.375rem] m-auto gap-12">
           <div className="imagContainer flex-1 h-1/2 " ref={ref}>
             <img
