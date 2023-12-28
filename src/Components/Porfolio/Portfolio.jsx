@@ -51,7 +51,7 @@ const Single = ({ item }) => {
 
   return (
     <section>
-      <div className="container flex items-center justify-center w-full h-full -z-10">
+      <div className="container flex items-center justify-center w-full h-full max-w-[85.375rem] m-auto -z-10">
         <div className="wrapper flex items-center justify-center w-full h-full max-w-[85.375rem] m-auto gap-12">
           <div className="imagContainer flex-1 h-1/2 " ref={ref}>
             <img
@@ -88,7 +88,7 @@ const Portfolio = () => {
   });
   return (
     <div className="portfolio relative" ref={ref}>
-      <div className="progress sticky top-0 left-0 pt-12 text-center text-[#f99e1b] text-[2.25rem]">
+      <div className="progress sticky top-0 left-0 pt-12 text-center text-[#f99e1b] text-[2.25rem] bg-[#0c0c1d] max-w-[85.375rem] m-auto -z-10">
         <h1>Featured works</h1>
         <motion.div
           style={{ scaleX }}

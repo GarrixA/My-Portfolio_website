@@ -6,14 +6,14 @@ const Navbar = () => {
     <div className="navbar h-28">
       {/* Navbar */}
       <Sidebar/>
-      <div className="wrapper max-w-[85.375rem] flex items-center justify-between m-auto h-full">
+      <div className="wrapper xl:max-w-[85.375rem]  flex items-center justify-end 2xl:justify-between m-6 2xl:m-auto 2xl:h-full h-[60%] md:justify-between md:mx-[8rem]">
         <motion.span
           animate={{
             opacity: [1, 0, 1],
             scale: [0, 0, 1]
            }}
           transition={{ ease: "easeOut", duration: 2 }}
-          className="uppercase font-bold"
+          className="uppercase font-bold md:flex hidden"
         >
           Garrix
         </motion.span>

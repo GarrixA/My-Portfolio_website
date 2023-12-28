@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 
 const variants = {
@@ -26,16 +27,16 @@ const itemVariants = {
   },
 };
 
-const MyLinks = () => {
+const MyLinks = ({toggleOpen}) => {
   const items = ["Home", "Services", "Portfolio", "Contact", "About"];
   return (
     <motion.div
-      className="absolute w-full h-full flex flex-col items-center justify-center gap-5 text-[1.5rem]"
+      className="absolute w-full h-full flex flex-col items-center justify-center gap-5 text-[1.8rem] md:text-[1.5rem]"
       variants={variants}
     >
       {items.map((item) => {
         return (
-          <motion.a href={`#${item}`} key={item} variants={itemVariants} whileHover={{scale: 1.3}} whileTap={{scale: 0.95}}>
+          <motion.a href={`#${item}`} key={item} variants={itemVariants} whileHover={{scale: 1.3}} whileTap={{scale: 0.95}} onClick={toggleOpen}>
             {item}
           </motion.a>
         );

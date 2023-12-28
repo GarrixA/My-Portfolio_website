@@ -66,7 +66,7 @@ const Contacts = () => {
         </motion.h1>
         <motion.div className="item" variants={variants}>
           <h2 className="font-bold text-[1.5rem] leading-5">Mail</h2>
-          <span className=" font-thin">hello@garrix.com</span>
+          <span className=" font-thin">aphrogarrix10@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2 className="font-bold text-[1.5rem] leading-5">Address</h2>
