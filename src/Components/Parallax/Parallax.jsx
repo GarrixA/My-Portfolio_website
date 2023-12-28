@@ -2,6 +2,7 @@ import "./parallax.scss";
 import PropTypes from "prop-types";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import '../../index.scss'
 
 const Parallax = ({ type }) => {
   const ref = useRef();
@@ -11,7 +12,7 @@ const Parallax = ({ type }) => {
     offset:["start start", "end start"],
   });
 
-  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
+  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "800%"]);
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   const xBg = useTransform(scrollYProgress, [0, 1], ["0%", "90%"]);
 
@@ -29,9 +30,9 @@ const Parallax = ({ type }) => {
       >
         <motion.h1 style={{ 
             y: yText,
-            userSelect: "none"
+            // userSelect: "none",
              }}>
-          {type === "Services" ? "What We Do" : "What We Did"}
+          {type === "Services" ? "What I Do" : "What I Did"}
         </motion.h1>
         <motion.div className="mountains"></motion.div>
         <motion.div style={{ 

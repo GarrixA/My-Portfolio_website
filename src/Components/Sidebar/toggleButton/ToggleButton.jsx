@@ -5,7 +5,7 @@ const ToggleButton = ({ toggleOpen }) => {
   return (
     <button
       onClick={toggleOpen}
-      className="fixed w-14 h-14 rounded-full top-6 left-8 bg-transparent border-none z-999"
+      className="toggle fixed w-14 h-14 rounded-full top-6 left-8 bg-transparent border-none z-999"
     >
       <svg
         width="35"

@@ -2,6 +2,7 @@
 import image from "../../images/Des 3.png";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
+import '../../index.scss'
 const items = [
   {
     id: 1,
@@ -52,21 +53,21 @@ const Single = ({ item }) => {
   return (
     <section>
       <div className="container flex items-center justify-center w-full h-full max-w-[85.375rem] m-auto -z-10">
-        <div className="wrapper flex items-center justify-center w-full h-full max-w-[85.375rem] m-auto gap-12">
-          <div className="imagContainer flex-1 h-1/2 " ref={ref}>
+        <div className="wrapper flex flex-col md:flex-row items-center justify-center w-full h-full max-w-[85.375rem] m-auto gap-2 md:gap-12 -z-10">
+          <div className="imagContainer md:flex-1 md:max-h-[30rem] w-full max-h-[18.75rem] -z-10" ref={ref}>
             <img
               src={item.img}
               alt="image"
-              className="h-full w-full object-cover"
+              className="h-full w-full md:object-cover object-contain -z-10"
             />
           </div>
           <motion.div
-            className="textContainer flex-1 flex flex-col gap-7 "
+            className="textContainer md:flex-1 flex flex-col gap-2 md:gap-7 -z-10"
             style={{ y }}
           >
-            <h2 className="text-[4.5rem]">{item.title}</h2>
-            <p className="text-gray-600 text-[1.3rem]">{item.descri}</p>
-            <button className="bg-[#f99e1b] p-2 w-52 rounded-lg text-[1.4rem] cursor-pointer">
+            <h2 className="text-[4.5rem] -z-10">{item.title}</h2>
+            <p className="text-gray-600 text-[1.3rem] -z-10">{item.descri}</p>
+            <button className="bg-[#f99e1b] p-1 w-40 md:p-2 md:w-52 rounded-lg text-[1.4rem] cursor-pointer -z-10">
               See demo
             </button>
           </motion.div>

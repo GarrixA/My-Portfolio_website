@@ -51,35 +51,35 @@ const Contacts = () => {
   return (
     <motion.div
     ref={ref}
-      className="contacts flex items-center gap-12 max-w-[85.375rem] m-auto h-full"
+      className="contacts flex md:flex-row flex-col items-center gap-12 max-w-[85.375rem] m-auto h-full"
       variants={variants}
       initial="initial"
       whileInView="animate"
     >
         <ToastContainer/>
       <motion.div
-        className="textContainer flex flex-1 flex-col gap-10"
+        className="textContainer flex flex-1 flex-col gap-2 md:gap-10"
         variants={variants}
       >
-        <motion.h1 className="text-[7rem] leading-[6rem]" variants={variants}>
-          Let's do it <br /> to gether
+        <motion.h1 className="text-[2rem] md:mb-0 mb-2 md:text-white text-[#f99e1d] md:text-[7rem] md:leading-[6rem]" variants={variants}>
+          Let's do it <br className="md:block hidden"/> to gether
         </motion.h1>
         <motion.div className="item" variants={variants}>
-          <h2 className="font-bold text-[1.5rem] leading-5">Mail</h2>
+          <h2 className="font-bold text-1rem md:text-[1.5rem] leading-5">Mail</h2>
           <span className=" font-thin">aphrogarrix10@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2 className="font-bold text-[1.5rem] leading-5">Address</h2>
+          <h2 className="font-bold text-1rem md:text-[1.5rem] leading-5">Address</h2>
           <span className=" font-thin">Nyamirambo Nyarugenge</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2 className="font-bold text-[1.5rem] leading-5">Phone</h2>
+          <h2 className="font-bold text-1rem md:text-[1.5rem] leading-5">Phone</h2>
           <span className=" font-thin">+250789438437</span>
         </motion.div>
       </motion.div>
       <div className="formContainer flex-1 relative">
         <motion.div
-          className="phoneSvg absolute m-auto stroke-[#f99e1b] -z-10"
+          className="phoneSvg absolute m-auto stroke-[#f99e1b] -z-10 md:flex hidden"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
           transition={{
@@ -175,23 +175,23 @@ const Contacts = () => {
             type="text"
             required
             placeholder="name"
-            className="p-5 bg-transparent border-white border rounded"
+            className="p-2 md:p-5 bg-transparent border-white border rounded"
             name="name"
           />
           <input
             type="email"
             required
             placeholder="email"
-            className="p-5 bg-transparent border-white border rounded"
+            className=" p-2 md:p-5 bg-transparent border-white border rounded"
             name="email"
           />
           <textarea
-            rows="8"
+            rows="5"
             placeholder="message"
             className="p-5 bg-transparent border-white border rounded"
             name="message"
           />
-          <button className="p-4 cursor-pointer bg-[#f99e1b] rounded">
+          <button className="md:mb-0 mb-6 p-2 md:p-4 cursor-pointer bg-[#f99e1b] rounded">
             {loading? "Sending...": "Send"}
           </button>
           {/* {error && "failed to send email"}
